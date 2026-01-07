@@ -12,7 +12,7 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #f6f7f4;
+  background-color: #eeede9;
   color: #1a1a1a;
 }
 
@@ -56,7 +56,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
   max-width: 720px;
 }
 
@@ -96,31 +96,43 @@ p {
   border: 0;
 }
 
-/* ----------------------------------------------
-   CTA
----------------------------------------------- */
 
-.cta {
-  margin-top: 20px;
-}
+/* ----------------------------------------------
+   CTA – NOVÝ STYL
+---------------------------------------------- */
 
 .cta a {
   display: inline-block;
-  padding: 14px 36px;
+  padding: 14px 38px;
   border-radius: 999px;
-  background-color: #49ab3f;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #111111;
+  border: 2px solid #d62828;
   text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 10px 20px rgba(73,171,63,0.25);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin-top: -80px;
+  transition: 
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
 }
 
 .cta a:hover {
+  background-color: #111111;
+  color: #ffffff;
+  box-shadow: 0 12px 28px #d6282859;
   transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(73,171,63,0.35);
 }
+
+/*.cta a::after {
+  content: " →";
+  color: #d62828;
+  font-weight: 800;
+}
+
+
 
 /* ----------------------------------------------
    FOOTER
@@ -158,4 +170,88 @@ footer {
 .hero-right,
 .profile-image {
   display: none;
+}
+
+/* ----------------------------------------------
+   KRITICKÁ SLOVA
+---------------------------------------------- */
+
+.critical {
+  color: #d62828; /* silná akční červená */
+  font-weight: 700;
+  position: relative;
+}
+.critical2 {
+  color: #d62828; /* silná akční červená */
+  font-weight: 700;
+  position: relative;
+}
+
+.critical::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(214, 40, 40, 0.25);
+  border-radius: 2px;
+}
+/* ----------------------------------------------
+   TOP BAR
+---------------------------------------------- */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+/* ----------------------------------------------
+   HERO HERO LINK
+---------------------------------------------- */
+
+.top-link {
+  font-weight: 600;
+  text-decoration: none;
+  color: #111111;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1.5px solid #111111;
+  transition: 
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.top-link:hover {
+  background-color: #111111;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(214, 40, 40, 0.25);
+}
+/* ----------------------------------------------
+   CTA BLOCK
+---------------------------------------------- */
+
+.cta-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ----------------------------------------------
+   CTA ARROW – POSITIONED
+---------------------------------------------- */
+
+.cta-arrow {
+  /* POSUN DOLŮ */
+  opacity: 1;
+  width: 120px;          /* větší, ať má gesto */
+  height: auto;
+  transform: scaleY(0.75);
+  transform-origin: top center;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
