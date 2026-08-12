@@ -66,5 +66,5 @@ We may modify these Terms from time to time. Continued use of the application co
 <p>
 For questions regarding these Terms:
 <br>
-support@levelupapp.com
+levelupbylucy@gmail.com
 </p>

@@ -4,14 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Level Up by Lucy</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Level Up by Lucy helps you turn goals into daily missions, reflection and visible progress." />
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="home-page">
   <div class="noise"></div>
   <main class="page">
     <header class="topbar">
@@ -23,36 +20,54 @@
         <a href="#how">How it works</a>
         <a href="#lucy">Coach Lucy</a>
         <a href="#download">Get the app</a>
+        <a href="#support">Support</a>
+        <a href="privacy/">Privacy</a>
       </nav>
 
+      <!--
       <a href="https://herohero.co/levelupbylucy" target="_blank" rel="noreferrer" class="herohero-link">
         HeroHero
       </a>
+      -->
     </header>
 
     <section class="hero-section">
       <div class="hero-copy">
-        <span class="eyebrow">Your personal growth coach</span>
-        <h1>Become the person you keep promising yourself you’ll become.</h1>
+        <span class="eyebrow">Level Up by Lucy</span>
+        <h1>Become the person you want to be.</h1>
         <p>
-          Level Up turns your future vision into clear goals, daily missions and small wins Lucy helps you keep.
+          Turn your vision into clear goals, daily missions and visible streaks. Lucy keeps the next step calm, focused and doable.
         </p>
+
 
         <div class="hero-actions">
           <a href="#download" class="button button-primary">Get the app</a>
+          <!--
           <a href="https://herohero.co/levelupbylucy" target="_blank" rel="noreferrer" class="button button-secondary">
             Visit HeroHero
             <span aria-hidden="true">↗</span>
           </a>
+          -->
         </div>
       </div>
 
       <div class="phone-wrap" aria-label="Level Up app preview">
-                <img
+        <div class="phone-halo" aria-hidden="true"></div>
+        <img
           src="assets/levelup-app-preview.png"
           alt="Level Up app dashboard preview"
           class="app-preview-image"
         />
+        <div class="floating-card progress-float">
+          <span>Today</span>
+          <strong>40%</strong>
+          <small>tasks done</small>
+        </div>
+        <div class="floating-card streak-float">
+          <span>This week</span>
+          <strong>4 / 7</strong>
+          <small>days complete</small>
+        </div>
       </div>
     </section>
 
@@ -62,27 +77,27 @@
       <div class="steps">
         <article>
           <div class="step-icon">1</div>
-          <h3>Define your vision</h3>
+          <h3>Vision</h3>
           <p>Get clear on who you want to become.</p>
         </article>
         <article>
           <div class="step-icon">2</div>
-          <h3>Set your goals</h3>
+          <h3>Goals</h3>
           <p>Break the vision into milestones.</p>
         </article>
         <article>
           <div class="step-icon">3</div>
-          <h3>Take daily action</h3>
+          <h3>Missions</h3>
           <p>Complete small missions that count.</p>
         </article>
         <article>
           <div class="step-icon">4</div>
-          <h3>Track & reflect</h3>
+          <h3>Reflect</h3>
           <p>See progress and adjust gently.</p>
         </article>
         <article>
           <div class="step-icon">5</div>
-          <h3>Become future you</h3>
+          <h3>Identity</h3>
           <p>Build identity through evidence.</p>
         </article>
       </div>
@@ -91,7 +106,7 @@
     <section class="lucy glass-panel" id="lucy">
       <div class="lucy-portrait">
         <img src="assets/lucy_sits.png" alt="Coach Lucy sitting" class="portrait-placeholder" />
-        <blockquote>“Small steps today, big changes tomorrow.”</blockquote>
+        <blockquote>"Identity precedes behaviour. Every small step is evidence."</blockquote>
       </div>
       <div class="lucy-copy">
         <span class="eyebrow">Your coach</span>
@@ -101,8 +116,8 @@
         </p>
         <ul>
           <li>Personalized motivation</li>
-          <li>Daily mission reminders</li>
-          <li>Reflection prompts</li>
+          <li>Daily tasks reminders</li>
+          <li>Future-you reflection prompts</li>
         </ul>
       </div>
     </section>
@@ -111,7 +126,7 @@
       <div>
         <span class="eyebrow">Start here</span>
         <h2>Get the app</h2>
-        <p>Scan the QR code when the App Store link is ready, or follow Level Up on HeroHero now.</p>
+        <p>Scan the QR code when the App Store link is ready.</p>
       </div>
       <div class="download-actions">
         <a href="#" class="qr" aria-label="QR code placeholder for App Store download">
@@ -120,16 +135,87 @@
         </a>
         <div class="store-links">
           <a href="#" class="store-button">Download on the App Store</a>
-          <a href="https://herohero.co/levelupbylucy" target="_blank" rel="noreferrer" class="button button-secondary">HeroHero ↗</a>
+          <!-- <a href="https://herohero.co/levelupbylucy" target="_blank" rel="noreferrer" class="button button-secondary">HeroHero ↗</a> -->
         </div>
       </div>
+    </section>
+
+    <section class="support glass-panel" id="support">
+      <div class="support-copy">
+        <span class="eyebrow">Support</span>
+        <h2>Need help with Level Up?</h2>
+        <p>
+          Send a question, bug report or account request. Your message will be addressed to
+          <a href="mailto:levelupbylucy@gmail.com">levelupbylucy@gmail.com</a>.
+        </p>
+      </div>
+
+      <form class="support-form" id="support-form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+        </label>
+
+        <label>
+          <span>Topic</span>
+          <select name="topic" required>
+            <option value="App support">App support</option>
+            <option value="Billing">Billing</option>
+            <option value="Privacy request">Privacy request</option>
+            <option value="Bug report">Bug report</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+
+        <label class="support-message">
+          <span>Message</span>
+          <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+        </label>
+
+        <button type="submit" class="button button-primary">Send support email</button>
+        <p class="form-note" id="support-note">This opens your email app with the message prepared.</p>
+      </form>
     </section>
 
     <footer class="footer">
       <img src="assets/logo.png" alt="Level Up" />
       <span>© 2026 Level Up by Lucy</span>
-      <a href="https://herohero.co/levelupbylucy" target="_blank" rel="noreferrer">HeroHero</a>
+      <a href="mailto:levelupbylucy@gmail.com">Support</a>
+      <a href="privacy/">Privacy Policy</a>
+      <!-- <a href="https://herohero.co/levelupbylucy" target="_blank" rel="noreferrer">HeroHero</a> -->
     </footer>
   </main>
+  <script>
+    const supportForm = document.querySelector("#support-form");
+
+    supportForm?.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(supportForm);
+      const name = formData.get("name");
+      const email = formData.get("email");
+      const topic = formData.get("topic");
+      const message = formData.get("message");
+      const body = [
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Topic: ${topic}`,
+        "",
+        message
+      ].join("\n");
+
+      window.location.href = `mailto:levelupbylucy@gmail.com?subject=${encodeURIComponent(`[Level Up support] ${topic}`)}&body=${encodeURIComponent(body)}`;
+
+      const note = document.querySelector("#support-note");
+      if (note) {
+        note.textContent = "Your email app should open with the message prepared.";
+      }
+    });
+  </script>
 </body>
 </html>
