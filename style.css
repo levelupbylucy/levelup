@@ -246,6 +246,7 @@ h2 {
   border-radius: 0;
   box-shadow: none;
   background: transparent;
+  transform: translateY(-25px);
 }
 
 .floating-card {
@@ -289,7 +290,7 @@ h2 {
 }
 
 .streak-float {
-  right: 8px;
+  right: 18px;
   bottom: 120px;
 }
 
