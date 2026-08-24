@@ -244,7 +244,7 @@ h2 {
   z-index: 1;
   width: min(304px, 82vw);
   height: auto;
-  border-radius: 34px;
+  border-radius: 38px;
   box-shadow: none;
   background: transparent;
   transform: translateY(-25px);
@@ -738,7 +738,7 @@ h2 {
 
   .app-preview-image {
     width: min(330px, 88vw);
-    border-radius: 34px;
+    border-radius: 38px;
     transform: none;
   }
 
