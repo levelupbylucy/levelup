@@ -244,7 +244,7 @@ h2 {
   z-index: 1;
   width: min(304px, 82vw);
   height: auto;
-  border-radius: 72px;
+  border-radius: 56px;
   box-shadow: none;
   background: transparent;
   transform: translateY(-25px);
