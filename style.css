@@ -85,6 +85,7 @@ img {
 .logo {
   width: 126px;
   height: auto;
+  background: transparent;
 }
 
 .nav {
@@ -570,11 +571,12 @@ h2 {
 }
 
 .legal-page .page {
-  width: min(940px, calc(100% - 40px));
+  width: min(1160px, calc(100% - 40px));
 }
 
 .legal-shell {
-  margin: 22px 0 34px;
+  width: min(940px, 100%);
+  margin: 22px auto 34px;
   padding: 42px;
   border: 1px solid rgba(255, 255, 255, .24);
   border-radius: 28px;
@@ -661,7 +663,8 @@ h2 {
 @media (max-width: 620px) {
   .page,
   .legal-page .page {
-    width: min(100% - 24px, 1160px);
+    width: calc(100% - 24px);
+    max-width: 1160px;
     padding-top: 14px;
   }
 
@@ -717,6 +720,37 @@ h2 {
   .legal-shell {
     padding: 24px;
     border-radius: 24px;
+  }
+
+  .legal-shell {
+    width: 100%;
+    padding: 22px 18px;
+    overflow-wrap: anywhere;
+  }
+
+  .legal-hero {
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .legal-hero h1 {
+    font-size: clamp(36px, 12vw, 44px);
+    line-height: 1.05;
+  }
+
+  .legal-hero p,
+  .legal-content p,
+  .legal-content li {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .legal-content section {
+    padding-top: 20px;
+  }
+
+  .legal-content h2 {
+    font-size: 22px;
   }
 
   .steps {
